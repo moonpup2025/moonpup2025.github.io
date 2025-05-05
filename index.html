@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MoonPup - The Astronaut Dog Coin</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Comic+Neue:wght@700&family=Bangers&display=swap');
+    
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    
+    body {
+      font-family: 'Comic Neue', cursive;
+      background: #0a0a2a;
+      color: white;
+      line-height: 1.6;
+    }
+    
+    .main-logo {
+      text-align: center;
+      padding: 30px 0;
+      background: linear-gradient(135deg, #6e45e2 0%, #89d4cf 100%);
+    }
+    
+    .main-logo img {
+      width: 200px;
+      height: auto;
+      margin-bottom: 20px;
+    }
+    
+    .main-logo h1 {
+      font-family: 'Bangers', cursive;
+      font-size: 4rem;
+      color: #ffde59;
+      text-shadow: 3px 3px 0 #000, 
+                  -1px -1px 0 #000,  
+                   1px -1px 0 #000,
+                   -1px 1px 0 #000,
+                    1px 1px 0 #000;
+      letter-spacing: 2px;
+    }
+    
+    .main-logo .subtitle {
+      font-size: 1.5rem;
+      color: white;
+      margin-top: 10px;
+    }
+    
+    nav {
+      background: #121212;
+      padding: 15px;
+      text-align: center;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+    
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 15px;
+      font-size: 1.1rem;
+      transition: color 0.3s;
+    }
+    
+    nav a:hover {
+      color: #ffde59;
+    }
+    
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+    
+    .story-section {
+      background: rgba(255,255,255,0.1);
+      border-radius: 20px;
+      padding: 30px;
+      margin: 30px 0;
+      box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+    }
+    
+    h2 {
+      color: #ffde59;
+      font-size: 2.5rem;
+      margin-bottom: 20px;
+      text-align: center;
+      font-family: 'Bangers', cursive;
+      letter-spacing: 1px;
+    }
+    
+    h3 {
+      color: #89d4cf;
+      font-size: 1.8rem;
+      margin: 25px 0 15px;
+    }
+    
+    p {
+      margin-bottom: 15px;
+      font-size: 1.1rem;
+    }
+    
+    .emoji {
+      font-size: 1.3rem;
+    }
+    
+    .cta-button {
+      display: inline-block;
+      background: #ffde59;
+      color: #0a0a2a;
+      padding: 12px 25px;
+      border-radius: 50px;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 1.2rem;
+      margin: 20px 10px;
+      transition: transform 0.3s, box-shadow 0.3s;
+      box-shadow: 0 5px 15px rgba(255,222,89,0.4);
+    }
+    
+    .cta-button:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 8px 20px rgba(255,222,89,0.6);
+    }
+    
+    .tokenomics {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      margin: 30px 0;
+    }
+    
+    .token-card {
+      background: rgba(138, 212, 207, 0.1);
+      border-radius: 15px;
+      padding: 20px;
+      width: 48%;
+      margin-bottom: 20px;
+      border: 2px solid #89d4cf;
+    }
+    
+    .token-card h4 {
+      color: #ffde59;
+      font-size: 1.5rem;
+      margin-bottom: 10px;
+    }
+    
+    footer {
+      background: #121212;
+      text-align: center;
+      padding: 20px;
+      margin-top: 50px;
+    }
+    
+    .social-icons {
+      margin: 20px 0;
+    }
+    
+    .social-icons a {
+      color: white;
+      font-size: 1.5rem;
+      margin: 0 10px;
+      transition: color 0.3s;
+    }
+    
+    .social-icons a:hover {
+      color: #ffde59;
+    }
+    
+    @media (max-width: 768px) {
+      .main-logo h1 {
+        font-size: 2.5rem;
+      }
+      
+      .token-card {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="main-logo">
+      <img src="https://white-advisory-lobster-462.mypinata.cloud/ipfs/bafybeieqg6fwofb62j7wytco6nyrga2zssangl3o4fwriaxmlsidp7uws4" alt="MoonPup Logo">
+      <h1>MOONPUP</h1>
+      <p class="subtitle">The Astronaut Dog Coin</p>
+    </div>
+    
+    <nav>
+      <a href="#story">MoonPup's Story</a>
+      <a href="#tokenomics">Tokenomics</a>
+      <a href="#community">Community</a>
+      <a href="#buy">How to Buy</a>
+    </nav>
+  </header>
+  
+  <div class="container">
+    <section id="story" class="story-section">
+      <h2>The Legend of MoonPup <span class="emoji">🐶🌙</span></h2>
+      
+      <h3>Chapter 1: Birth of MoonPup</h3>
+      <p>In a small village in the crypto universe, an adorable puppy named MoonPup was born. This little pup had big dreams from day one - to go to the moon and conquer the crypto galaxy! <span class="emoji">🪐</span> You could see the ambition and mischief sparkling in his bright eyes. MoonPup would always gaze at the sky and think: "Why should dogs just chase bones? I want to chase the stars!" <span class="emoji">🌟</span></p>
+      
+      <p>One day while scrolling through crypto Twitter, he saw other meme coins like Dogecoin and Shiba shining bright. MoonPup told himself: "If they can do it, so can I! But I'm no ordinary dog... I'm a space dog!" <span class="emoji">🚀</span> So he put on a funny astronaut helmet, wore a spacesuit, and got ready for his moon mission!</p>
+      
+      <h3>Chapter 2: MoonPup's Space Adventures</h3>
+      <p>MoonPup decided to build a rocket called $PUPMOON Rocket with help from the crypto community. But he needed a strong team:</p>
+      
+      <p><strong>HODLers</strong>: Loyal dogs who hold $PUPMOON tokens and fuel the rocket.</p>
+      <p><strong>Memers</strong>: Creative pups who make hilarious memes on Twitter and TikTok to viralize MoonPup.</p>
+      <p><strong>Astronaut Whales</strong>: Big investors whose massive buys launch the rocket to the moon! <span class="emoji">🐳</span></p>
+      
+      <p>MoonPup announced in his Telegram group: "Friends! I want to go to the moon, but I can't do it without you! Let's take $PUPMOON to the galaxy together!" <span class="emoji">🗣️</span> The community loved the idea and started supporting. Soon, #ToTheMoonPup went viral with memes of MoonPup in his astronaut helmet everywhere! <span class="emoji">😍</span></p>
+      
+      <h3>Chapter 3: Challenges and Enemies</h3>
+      <p>On the way to the moon, MoonPup faced challenges:</p>
+      
+      <p><strong>FUD Bears</strong>: Mean bears who said "A little dog can't go to the moon! $PUPMOON is a joke!" <span class="emoji">🐻</span> MoonPup clapped back with a hilarious meme: "You bears just know how to hibernate, but I'm going to the moon!" <span class="emoji">😜</span></p>
+      
+      <p><strong>Rug Pull Wolves</strong>: Wolves who tried to steal MoonPup's liquidity, but he was too smart! He locked liquidity on Raydium to show $PUPMOON was legit. <span class="emoji">🐺</span></p>
+      
+      <p><strong>Dump Sharks</strong>: Sharks who tried to dump the price, but the MoonPup community HODLed and bought more to pump it back up! <span class="emoji">🦈</span></p>
+      
+      <h3>Chapter 4: Moon Landing and Beyond</h3>
+      <p>After much effort, the $PUPMOON Rocket finally reached the moon! MoonPup proudly planted the $PUPMOON flag and tweeted: "We made it to the moon! Now let's go to Mars! <span class="emoji">🚀🐶</span> #MoonPupToMars" The community went wild with celebration memes of MoonPup dancing on the moon! <span class="emoji">💃</span></p>
+      
+      <p>But MoonPup didn't stop there. His new goals:</p>
+      <p>- Create NFT collection of astronaut dogs for $PUPMOON holders</p>
+      <p>- Get listed on major exchanges like MEXC and Gate.io</p>
+      <p>- Launch "MoonPup Space Adventure" crypto game where players explore planets with astronaut dogs and earn $PUPMOON <span class="emoji">🎮</span></p>
+      
+      <h3>MoonPup's Motto</h3>
+      <p>"We're not just a meme coin - we're a dream!"</p>
+      <p>His message to the community: "Let's reach the stars together! No matter how small we are, together we can conquer the galaxy!" <span class="emoji">🌌</span></p>
+      
+      <div style="text-align: center;">
+        <a href="#" class="cta-button">Join Our Telegram</a>
+        <a href="#" class="cta-button">Buy $PUPMOON</a>
+      </div>
+    </section>
+    
+    <section id="tokenomics">
+      <h2>Tokenomics</h2>
+      <div class="tokenomics">
+        <div class="token-card">
+          <h4>Total Supply</h4>
+          <p>1,000,000,000 $PUPMOON</p>
+        </div>
+        
+        <div class="token-card">
+          <h4>50% Airdrop</h4>
+          <p>500,000,000 tokens distributed to early supporters</p>
+        </div>
+        
+        <div class="token-card">
+          <h4>25% Liquidity</h4>
+          <p>Locked for 2 years</p>
+        </div>
+        
+        <div class="token-card">
+          <h4>15% Team</h4>
+          <p>Vested over 12 months</p>
+        </div>
+        
+        <div class="token-card">
+          <h4>5% Charity</h4>
+          <p>Helping real dogs in need</p>
+        </div>
+        
+        <div class="token-card">
+          <h4>5% Marketing</h4>
+          <p>For exchanges and promotions</p>
+        </div>
+      </div>
+    </section>
+    
+    <section id="community" style="text-align: center; margin: 50px 0;">
+      <h2>Join the MoonPup Pack!</h2>
+      <div class="social-icons">
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-telegram"></i></a>
+        <a href="#"><i class="fab fa-discord"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+      </div>
+    </section>
+  </div>
+  
+  <footer>
+    <p>&copy; 2023 MoonPup ($PUPMOON) | The Astronaut Dog Coin</p>
+  </footer>
+
+  <!-- Font Awesome for icons -->
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</body>
+</html>
