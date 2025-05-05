@@ -27,9 +27,9 @@
     }
     
     .main-logo img {
-      width: 200px;
+      width: 300px;
       height: auto;
-      margin-bottom: 20px;
+      margin-bottom: 10px;
     }
     
     .main-logo h1 {
@@ -48,6 +48,13 @@
       font-size: 1.5rem;
       color: white;
       margin-top: 10px;
+    }
+    
+    .main-logo .listing-text {
+      font-size: 1.2rem;
+      color: #ffde59;
+      margin-top: 10px;
+      font-weight: bold;
     }
     
     nav {
@@ -128,26 +135,57 @@
       box-shadow: 0 8px 20px rgba(255,222,89,0.6);
     }
     
+    .price-section {
+      text-align: center;
+      margin: 30px 0;
+      padding: 20px;
+      background: rgba(138, 212, 207, 0.1);
+      border-radius: 15px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+    }
+    
+    .price-section p {
+      font-size: 1.5rem;
+      color: #ffde59;
+    }
+    
+    .airdrop-section {
+      text-align: center;
+      margin: 30px 0;
+      padding: 20px;
+      background: rgba(255, 222, 89, 0.1);
+      border-radius: 15px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+    }
+    
+    .airdrop-section p {
+      font-size: 1.2rem;
+      color: #ffde59;
+    }
+    
+    .exchange-logos {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      flex-wrap: wrap;
+      margin: 30px 0;
+    }
+    
+    .exchange-logos img {
+      width: 100px;
+      height: auto;
+      transition: transform 0.3s;
+    }
+    
+    .exchange-logos img:hover {
+      transform: scale(1.1);
+    }
+    
     .tokenomics {
       display: flex;
       flex-wrap: wrap;
       justify-content: space-between;
       margin: 30px 0;
-    }
-    
-    .token-card {
-      background: rgba(138, 212, 207, 0.1);
-      border-radius: 15px;
-      padding: 20px;
-      width: 48%;
-      margin-bottom: 20px;
-      border: 2px solid #89d4cf;
-    }
-    
-    .token-card h4 {
-      color: #ffde59;
-      font-size: 1.5rem;
-      margin-bottom: 10px;
     }
     
     footer {
@@ -176,9 +214,11 @@
       .main-logo h1 {
         font-size: 2.5rem;
       }
-      
-      .token-card {
-        width: 100%;
+      .main-logo img {
+        width: 200px;
+      }
+      .exchange-logos img {
+        width: 80px;
       }
     }
   </style>
@@ -189,6 +229,8 @@
       <img src="https://white-advisory-lobster-462.mypinata.cloud/ipfs/bafybeieqg6fwofb62j7wytco6nyrga2zssangl3o4fwriaxmlsidp7uws4" alt="MoonPup Logo">
       <h1>MOONPUP</h1>
       <p class="subtitle">The Astronaut Dog Coin</p>
+      <p class="listing-text">Coming soon to all major exchanges!</p>
+      <div style="height: 30px; line-height: 10px;">&nbsp;<br>&nbsp;<br>&nbsp;</div>
     </div>
     
     <nav>
@@ -200,6 +242,24 @@
   </header>
   
   <div class="container">
+    <section class="price-section">
+      <p>Live Price on Pump.fun: <span id="pumpPrice">Loading...</span></p>
+    </section>
+    
+    <section class="airdrop-section">
+      <h2>Airdrop</h2>
+      <p>Airdrop is under preparation! Details coming soon. ✈️</p>
+    </section>
+    
+    <section class="exchange-logos">
+      <a href="https://pump.fun"><img src="https://white-advisory-lobster-462.mypinata.cloud/ipfs/bafybeibdydigebdhzoqsgw6j4yu53p2t2hidrcwponz2i2lm5epcfsndhq/Pump_fun_logo.png" alt="Pump.fun"></a>
+      <a href="https://raydium.io"><img src="https://white-advisory-lobster-462.mypinata.cloud/ipfs/bafybeibdydigebdhzoqsgw6j4yu53p2t2hidrcwponz2i2lm5epcfsndhq/raydium-ray-logo.png" alt="Raydium"></a>
+      <a href="https://www.mexc.com"><img src="https://white-advisory-lobster-462.mypinata.cloud/ipfs/bafybeibdydigebdhzoqsgw6j4yu53p2t2hidrcwponz2i2lm5epcfsndhq/mexc-logo.png" alt="MEXC"></a>
+      <a href="https://www.lbank.com"><img src="https://white-advisory-lobster-462.mypinata.cloud/ipfs/bafybeibdydigebdhzoqsgw6j4yu53p2t2hidrcwponz2i2lm5epcfsndhq/lbank-logo-png_seeklogo-529200.png" alt="LBank"></a>
+      <a href="#"><img src="https://white-advisory-lobster-462.mypinata.cloud/ipfs/bafybeibdydigebdhzoqsgw6j4yu53p2t2hidrcwponz2i2lm5epcfsndhq/idZvjJMpax_1746476065709.svg" alt="Exchange 5"></a>
+      <a href="#"><img src="https://white-advisory-lobster-462.mypinata.cloud/ipfs/bafybeibdydigebdhzoqsgw6j4yu53p2t2hidrcwponz2i2lm5epcfsndhq/logo-1.png" alt="Exchange 6"></a>
+    </section>
+    
     <section id="story" class="story-section">
       <h2>The Legend of MoonPup <span class="emoji">🐶🌙</span></h2>
       
@@ -239,7 +299,7 @@
       <p>His message to the community: "Let's reach the stars together! No matter how small we are, together we can conquer the galaxy!" <span class="emoji">🌌</span></p>
       
       <div style="text-align: center;">
-        <a href="#" class="cta-button">Join Our Telegram</a>
+        <a href="https://t.me/moonpupcommunity" class="cta-button">Join Our Telegram</a>
         <a href="#" class="cta-button">Buy $PUPMOON</a>
       </div>
     </section>
@@ -282,16 +342,14 @@
     <section id="community" style="text-align: center; margin: 50px 0;">
       <h2>Join the MoonPup Pack!</h2>
       <div class="social-icons">
-        <a href="#"><i class="fab fa-twitter"></i></a>
-        <a href="#"><i class="fab fa-telegram"></i></a>
-        <a href="#"><i class="fab fa-discord"></i></a>
-        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="https://x.com/moonpup2025"><i class="fab fa-twitter"></i></a>
+        <a href="https://t.me/moonpupcommunity"><i class="fab fa-telegram"></i></a>
       </div>
     </section>
   </div>
   
   <footer>
-    <p>&copy; 2023 MoonPup ($PUPMOON) | The Astronaut Dog Coin</p>
+    <p>© 2023 MoonPup ($PUPMOON) | The Astronaut Dog Coin</p>
   </footer>
 
   <!-- Font Awesome for icons -->
